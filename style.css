@@ -81,6 +81,14 @@ body{
   background-size: cover;
 }
 
+.historyImg{
+  background-image: url("images/History/saopaulo-historia-rualiberobadaro.jpg");
+}
+
+.nightLifeImg{
+  background-image: url("images/nightLife/NightTraffic.jpg");
+}
+
 .show{
   max-height: 100%;
 }

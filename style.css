@@ -18,7 +18,7 @@ body{
   align-items: center;
   justify-content: space-between;
   z-index: 200;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -82,11 +82,15 @@ body{
 }
 
 .historyImg{
-  background-image: url("images/History/saopaulo-historia-rualiberobadaro.jpg");
+  background-image: url("images/History/pexels-chait-goli-1796712.jpg");
+}
+
+.cultureImg{
+  background-image: url("images/Culture/pexels-eduardo-dutra-3044565.jpg");
 }
 
 .nightLifeImg{
-  background-image: url("images/nightLife/NightTraffic.jpg");
+  background-image: url("images/nightLife/alexander-popov-9vDdkxSCAD4-unsplash.jpg");
 }
 
 .show{

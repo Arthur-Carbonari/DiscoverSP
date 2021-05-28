@@ -61,11 +61,24 @@ body{
   padding: 4.25px;
 }
 
+#indexCarrosel{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#indexCarrosel.headerImage1{
+  background-image: url("images/main/SaoPaulo-high.jpg");
+}
+
 /* ============================Main========================================== */
 
 .indexArticle{
-  max-height: 0;
-  overflow: hidden;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .show{

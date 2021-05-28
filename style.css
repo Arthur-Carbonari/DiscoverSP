@@ -18,6 +18,11 @@ body{
   align-items: center;
   justify-content: space-between;
   z-index: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
 }
 
 #masthead nav img{
@@ -28,9 +33,6 @@ body{
   margin: 0;
   padding: 0;
   text-transform:capitalize;
-  width: 75%;
-
-
 
   display: flex;
   justify-content:space-between;
@@ -40,9 +42,32 @@ body{
 
 #masthead nav ul li{
   list-style: none;
+  margin-right: 1rem;
+}
+
+#masthead ul li a{
+  text-decoration: none;
+  color: #fffd;
+  font-size: 1.1rem;
+  display: block;
   padding: 1rem;
 }
 
-#masthead nav ul li:hover{
+#masthead nav a:hover{
   background-color: #000d;
+}
+
+#iconImg{
+  padding: 4.25px;
+}
+
+/* ============================Main========================================== */
+
+.indexArticle{
+  max-height: 0;
+  overflow: hidden;
+}
+
+.show{
+  max-height: 100%;
 }

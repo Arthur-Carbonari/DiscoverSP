@@ -22,7 +22,7 @@ body{
   left: 0;
   right: 0;
   overflow: hidden;
-  height: 8vh;  /* 8.1 if border is removed*/
+  height: 8.1vh;
 }
 
 #masthead nav img{
@@ -47,16 +47,18 @@ body{
   text-decoration: none;
   color: #fffd;
   font-size: 1.4rem;
-  display: block;
-  padding: 100% 1.5rem 100% 1.5rem;
+  padding: 0 1.5rem 0 1.5rem;
+  line-height: 8.1vh;
+  display: inline-block;
 }
 
 #masthead nav a:hover{
   background-color: #000d;
 }
 
-#masthead #iconImg{
-  padding: 100% 1.5rem 100% 1.5rem;
+#masthead #iconImg img{
+  padding: 0.2rem;
+  vertical-align: middle;
 }
 
 #indexCarrosel{
@@ -88,7 +90,7 @@ body{
 }
 
 .nightLifeImg{
-  background-image: url("images/nightLife/StreetAugusta.png");
+  background-image: url("images/nightLife/TerracoItalia.jpg");
 }
 
 .buttonPlus{
@@ -105,7 +107,6 @@ body{
 
 main .indexArticle{
   position: relative;
-  border-top: 1px solid #000; /* was added later*/
 }
 
 main .indexArticle h1{
@@ -115,7 +116,6 @@ main .indexArticle h1{
   padding: 1rem;
   position: absolute;
   bottom: 0;
-  font-weight: bolder;
 }
 
 main .indexArticle .buttonPlus{

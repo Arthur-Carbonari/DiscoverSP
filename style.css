@@ -384,20 +384,20 @@ main .content{
 }
 
 /*Restaurants*/
-.imgD-EDGE{
-  background-image: url("images/NightLife/NC-D.EDGEE.jpg");
+.imgItalia{
+  background-image: url("images/NightLife/Rest-terracoItalia.jpg");
 }
 
-.imgLions{
-  background-image: url("images/NightLife/NC-Lions.jpg");
+.imgDOM{
+  background-image: url("images/NightLife/Rest-DOM.jpg");
 }
 
-.imgPiuPiu{
-  background-image: url("images/NightLife/NC-CafePiuPiu.jpg");
+.imgIzakaya{
+  background-image: url("images/NightLife/Rest-izakaya-issa.jpg");
 }
 
-.imgWoods{
-  background-image: url("images/NightLife/NC-woods-up.jpg");
+.imgFigueira{
+  background-image: url("images/NightLife/Rest-figueira-rubaiyat2.jpg");
 }
 
 /**/

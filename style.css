@@ -332,6 +332,24 @@ main .content{
   background-image: url("images/Culture/Th-AuditoriumIbirapuera-Front.png");
 }
 
+/*Outdoors*/
+.imgIbirapuera{
+  background-image: url("images/Culture/Out-ibirapuera-Park.jpg");
+}
+
+.imgVillaLobos{
+  background-image: url("images/Culture/Out-VilaLobos-Park.jpg");
+}
+
+.imgLiberdade{
+  background-image: url("images/Culture/Out-Liberdade.jpg");
+}
+
+.imgPaulista{
+  background-image: url("images/Culture/Out-Paulista.jpg");
+}
+
+/**/
 
 .imgslaoq{
   background-image: url("images/Culture/proximaimg.jpg");

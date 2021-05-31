@@ -366,6 +366,40 @@ main .content{
   background-image: url("images/NightLife/NC-woods-up.jpg");
 }
 
+/*Pubs*/
+.imgPitico{
+  background-image: url("images/NightLife/Pub-Pitico.jpg");
+}
+
+.imgAstor{
+  background-image: url("images/NightLife/Pub-Astor.jpg");
+}
+
+.imgJuarez{
+  background-image: url("images/NightLife/Pub-bar-do-juarez.png");
+}
+
+.imgVaca{
+  background-image: url("images/NightLife/Pub-VacaVeia.jpg");
+}
+
+/*Restaurants*/
+.imgD-EDGE{
+  background-image: url("images/NightLife/NC-D.EDGEE.jpg");
+}
+
+.imgLions{
+  background-image: url("images/NightLife/NC-Lions.jpg");
+}
+
+.imgPiuPiu{
+  background-image: url("images/NightLife/NC-CafePiuPiu.jpg");
+}
+
+.imgWoods{
+  background-image: url("images/NightLife/NC-woods-up.jpg");
+}
+
 /**/
 
 .imgslaoq{

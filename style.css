@@ -400,7 +400,19 @@ main .content{
   background-image: url("images/NightLife/Rest-figueira-rubaiyat2.jpg");
 }
 
-/**/
+/*History*/
+.imgFound{
+  background-image: url("images/History/Antonio-Parreiras-The-Founding-of-S-o-Paulo.jpg");
+}
+
+.imgCoffee{
+  background-image: url("images/History/CI-EstacaoDaLuz1900.jpg");
+}
+
+.imgXXI{
+  background-image: url("images/Main/Morumbi.jpg");
+}
+
 
 .imgslaoq{
   background-image: url("images/Culture/proximaimg.jpg");

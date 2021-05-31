@@ -4,8 +4,10 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Sao Paulo Main Page</title>
+    <title>Discover SP</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="glide/dist/css/glide.theme.min.css">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
   </head>
@@ -19,16 +21,57 @@
         <a href="index.html" id="iconImg"><img src="images/icon.png" alt="Icon"></a>
 
         <ul>
-          <li><a href="#">Culture</a></li>
-          <li><a href="#">Night Life</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">About Us</a></li>
+          <li>
+            <a class="dropdownMenu">Culture</a>
+            <ul class="dropdownList">
+              <li><a href="museums.html">Museums</a></li>
+              <li><a href="theatres.html">Theatres</a></li>
+              <li><a href="outdoors.html">Outdoors</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="dropdownMenu">Night Life</a>
+            <ul class="dropdownList">
+              <li><a href="clubs.html">Night Clubs</a></li>
+              <li><a href="pubs.html">Pubs</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="dropdownMenu">History</a>
+            <ul class="dropdownList">
+              <li><a href="foundation.html">Foundation</a></li>
+              <li><a href="coffee.html">Coffee Boom</a></li>
+              <li><a href="xxi.html">XXI Century</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="dropdownMenu">About Us</a>
+            <ul class="dropdownList">
+              <li><a href="developers.html">Developers</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
 
-      <div class="headerImage1" id="indexCarrosel">
+      <div class="glide">
 
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide headerImage1"></li>
+            <li class="glide__slide headerImage2"></li>
+            <li class="glide__slide headerImage3"></li>
+            <li class="glide__slide headerImage4"></li>
+          </ul>
+
+        </div>
       </div>
+
 
     </header>
 
@@ -36,22 +79,74 @@
     <main>
 
       <article class="indexArticle historyImg">
-        <a href="javascript:void(0)" class="buttonPlus"></a>
+        <a class="buttonPlus"></a>
         <h1>History</h1>
+
+        <div class="sideMenu">
+
+          <div class="links">
+
+            <a href="who.html"></a>
+            <h3>Foundation</h3>
+            <a href="who.html"></a>
+            <h3>The Coffe Boom</h3>
+            <a href="who.html"></a>
+            <h3>XXI Century</h3>
+
+          </div>
+
+          <p>First settled in 1554, São Paulo became an official city in 1711. With a very rich history, its main development started in the second half of XIX century due the construction of Santos-Jundiai railway that facilitated the path of the coffee beans of São Paulo to the Port of Santos. Since then São Paulo has become the main economic city of Brazil and South-America and the most populated one. </p>
+
+        </div>
       </article>
 
-      <article class="indexArticle cultureImg">
-        <a href="javascript:void(0)" class="buttonPlus"></a>
+      <article class="indexArticle imgMASP">
+        <a class="buttonPlus"></a>
         <h1>Culture</h1>
+        <div class="sideMenu">
+          <div class="links">
+            <a href="museums.html" class="imgMASP"></a>
+            <h3>Museums</h3>
+            <a href="who.html"></a>
+            <h3>Theatres</h3>
+            <a href="who.html"></a>
+            <h3>Outdoors</h3>
+          </div>
+
+          <p>With a large number of options, São Paulo has amazing and unique museums of all kinds, from local to international art and history, unique outdoors views, and Theaters with the most Victorian sophisticated style to the most simple ones.</p>
+        </div>
       </article>
 
       <article class="indexArticle nightLifeImg">
-        <a href="javascript:void(0)" class="buttonPlus"></a>
+        <a class="buttonPlus"></a>
         <h1>Night Life</h1>
+        <div class="sideMenu">
+          <div class="links">
+            <a href="who.html"></a>
+            <h3>Restaurants</h3>
+            <a href="who.html"></a>
+            <h3>Pubs</h3>
+            <a href="who.html"></a>
+            <h3>Night Clubs</h3>
+          </div>
+          <p>To say that São Paulo is a city that never sleeps is no hyperbole. Such a crowded city is a filled with many differents Pubs, Night clubs and Restaurants that ranges from the most unique to the most fancies. São Paulo nightlife is something that can’t be ignored. </p>
+        </div>
       </article>
 
     </main>
 
     <script src="script.Js"></script>
+    <script src="glide/dist/glide.min.js"></script>
+
+    <script>
+      new Glide('.glide',{
+        type: 'carousel',
+        autoplay:true|3000,
+        gap: 0,
+        animationDuration: 2000
+
+      }).mount()
+    </script>
+
   </body>
 </html>

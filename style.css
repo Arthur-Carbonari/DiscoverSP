@@ -156,7 +156,7 @@ article{
   background-position: center center;
   background-size: cover;
   overflow: hidden;
-  background-color: #0008;
+  background-color: #000a;
 }
 
 main .indexArticle{
@@ -310,6 +310,19 @@ main .glide__bullets {
   padding: 0 3rem;
   right: 0;
   left: 0;
+}
+
+.content ul li{
+  height: auto;
+  margin: 1rem 0;
+  color: #fff;
+  border: none;
+  
+  opacity: 100%;
+}
+
+.content ul li a:hover{
+  text-decoration: underline;
 }
 
 .content footer {

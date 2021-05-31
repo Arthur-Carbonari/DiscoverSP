@@ -1,6 +1,7 @@
 html{
 }
 
+
 body{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.1rem;
@@ -20,6 +21,11 @@ a{
   position: relative;
   overflow: hidden;
 }
+
+#hamburguer{
+  display: none;
+}
+
 
 #masthead nav{
   padding: 0 2rem 0 1rem;
@@ -104,14 +110,7 @@ a{
   background-image: url("images/Misc/ic_arrow_down.png");
 }
 
-#masthead .showDropDownMenu .dropdownMenu{
-  background-image: url("images/Misc/ic_arrow_down.png");
-}
 
-#masthead .showDropDownMenu .dropdownList{
-  max-height: 100rem;
-  overflow: visible;
-}
 
 .sideMenu .content{
 
@@ -328,9 +327,8 @@ main .glide__bullets {
 }
 
 .contact{
-  display: flex;
-  
-  
+
+
 }
 
 .contactInfo{
@@ -341,6 +339,76 @@ main .glide__bullets {
 .contact form{
    padding: 0 2rem;
 }
+
+.contact label{
+  font-size: 1.4rem;
+  letter-spacing: 2;
+}
+
+#commentForm{
+  padding-bottom: 3rem;
+}
+
+#commentForm p{
+  margin: 1rem 0;
+}
+
+#messageField{
+  margin-bottom: 1rem;
+}
+
+#commentForm button{
+  background-color: #0004;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 1.3rem;
+}
+
+#commentForm button:hover{
+  background-color: #000;
+}
+
+#comfirmationField{
+  position: fixed;
+  background-color: #090909;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  bottom:10%;
+  top: 10%;
+  z-index: 100;
+  padding: 1rem;
+
+  overflow: scroll;
+}
+
+#commentForm .blackBackground{
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#messagePreview{
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-left: none;
+  border-right: none;
+
+}
+
+#comfirmationField p{
+  margin-bottom: 1.4rem;
+}
+
+#comfirmationField footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 30%;
+}
+
 /* =============================IMAGES======================================= */
 
 .headerImage1{
@@ -533,10 +601,146 @@ main .glide__bullet{
   height: 5vh;
 }
 
-.center{
-
+.hideDisplay{
+  display: none;
 }
 
 .show{
   max-height: 100rem;
+}
+
+
+@media screen and (max-width:800px) {
+
+  #masthead nav{
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    z-index: 300;
+    background-color: #000d;
+    min-height: 100vh;
+    justify-content: flex-start;
+    padding: 0;
+    font-size: 4rem;
+    overflow: scroll;
+    max-width: 0;
+  }
+
+  #masthead nav ul{
+    flex-direction: column;
+    width: 100%
+  }
+
+  #masthead nav li{
+    flex-direction: column;
+    width: 100%
+  }
+
+
+  #masthead .dropdownList{
+    position: static;
+    height: auto;
+  }
+
+  #iconImg{
+    width: 100%;
+  }
+
+  #masthead nav a{
+    padding: 1rem;
+    padding-right: 2rem;
+    width: 100%;
+    padding-left: 3rem;
+  }
+
+  #masthead a:hover{
+    background-color: inherit;
+  }
+
+  #hamburguer{
+    display: block;
+    position: fixed;
+    z-index: 1000;
+
+    top: 4%;
+    right: 4%;
+    font-size: 5rem;
+    padding: 0 1rem;
+    background-color: #000c;
+    color: #fff;
+    
+  }
+  
+  .buttonPlus{
+    display: none;
+  }
+  
+  .arrowDU{
+    display: none;
+  }
+  
+  .sideMenu p{
+    display: none;
+  }
+  
+  .sideMenu .links{
+    flex-direction: column;
+  }
+  
+  .sideMenu{
+    max-width: 100%;
+  }
+  
+  h1{
+    top: 1%;
+  }
+
+  
+  .sideMenu .content{
+    max-height: 80%;
+  }
+  
+  #masthead .sideMenu{
+    display: none;
+  }
+  
+  .links a{
+    width: 80%;
+  }
+  
+  #masthead nav.showNavMenu{
+    max-width: 100%;
+  }
+
+  #masthead h1{
+    top: unset;
+    bottom: 5%;
+  }
+  
+  .content{
+    max-height: 92%;
+  }
+  
+  #messageField{
+    max-width: 100%;
+  }
+  
+  label{
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  #masthead .showDropDownMenu .dropdownMenu{
+  background-image: url("images/Misc/ic_arrow_down.png");
+}
+
+  #masthead .showDropDownMenu .dropdownList{
+  max-height: 100rem;
+  overflow: visible;
+}
+  
+  
 }

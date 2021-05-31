@@ -65,30 +65,68 @@
 
     <main>
 
-      <article class="imgXXI">
+      <article class="headerImage3">
         <div class="blackBackground">
 
           <div class="content contact">
 
 
+            <h2>Contact Us</h2>
 
-            <div class="contactInfo">
+            <p>
+              If you want to leave a public comment or a question regarding the places reviewed in this website, or if you want to send a message directly to one of the developers, you can use the field bellow to send that message:
+            </p>
 
-              <h2>Contact Us</h2>
+            <form id="commentForm" class="">
+              <p>Please select the destinatary for the message</p>
+              <input type="radio" name="destinatary" value="comment" id="op1C"><label for="op1C">Public Comment</label><br>
+              <input type="radio" name="destinatary" value="arthurcarbonarimartins99@gmail.com" id="op2C"><label for="op2C">Developer -- Arthur Carbonari Martins -- arthurcarbonarimartins99@gmail.com</label><br>
+              <input type="radio" name="destinatary" value="vinipbellom@msn.com" id="op3C"><label for="op3C">Developer -- Vinicius Pepe Bellomo -- vinipbellom@msn.com</label><br>
+              <p>Please enter your name:</p>
+              <input type="text" name="nameInput" size="50">
+              <p>Write your message here:</p>
+              <textarea rows="10" cols="80" id="messageField"></textarea><br>
 
-              <p>
-                If you want to leave a public comment or a question regarding the places reviewed in this website, or if you want to send a message directly to one of the developers, you can use the field bellow to send that message, just select the desired destination:
-              </p>
+              <p class="warning hideDisplay">(!) Please provide a destinatary, a message and your name.</p>
+              <p class = "comfirmationMessage hideDisplay">Message Send!</p>
+              <button type="button" id="buttonSend">Send</button>
 
-            </div>
+              <div class="blackBackground hideDisplay">
+
+                <div id="comfirmationField">
+
+                  <header>
+                    <h3>Message Preview</h3>
+
+                    <p>Please confirm the details of the message:</p>
+                  </header>
+
+                  <main>
+
+                    <p>Your name:</p>
+
+                    <p>Destinatary: </p>
+
+                    <p>Message: </p>
+
+                    <div id="messagePreview">
+                      <p></p>
+                    </div>
+
+                    <footer>
+                      <button type="button" id="buttonCancel">Cancel</button>
+                      <button type="button" id="buttonConfirm">Confirm</button>
+                    </footer>
 
 
-            <form id="formStart" class="show center">
+                  </main>
 
-              <p>Please Enter Your Name:</p>
-              <input type="text" name="nameInput">
-              <p class="warning">(!) You can't leave your name empty</p>
-              <button type="button" id="buttonStart">Start</button>
+
+
+                </div>
+
+              </div>
+
 
             </form>
 

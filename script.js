@@ -1,4 +1,4 @@
-let indexPlusButtons = document.querySelectorAll("article .buttonPlus");
+let indexPlusButtons = document.querySelectorAll(".buttonPlus");
 indexPlusButtons.forEach(function(item) {
   item.addEventListener("click", function(e){
 

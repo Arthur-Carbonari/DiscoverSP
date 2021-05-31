@@ -315,6 +315,24 @@ main .content{
   background-position: bottom;
 }
 
+/*Theatres*/
+.imgMunicipal{
+  background-image: url("images/Culture/Th-MunicipalTheater.jpg");
+}
+
+.imgSalaSP{
+  background-image: url("images/Culture/Th-SalaSaoPaulo.jpg");
+}
+
+.imgSaoPedro{
+  background-image: url("images/Culture/Th-TeatroSãoPedro.jpg");
+}
+
+.imgAuditorium{
+  background-image: url("images/Culture/Th-AuditoriumIbirapuera-Front.png");
+}
+
+
 .imgslaoq{
   background-image: url("images/Culture/proximaimg.jpg");
 }

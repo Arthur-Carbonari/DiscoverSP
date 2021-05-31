@@ -308,8 +308,9 @@ main .glide__bullets {
   bottom: 0;
   max-height: 82vh;
   margin: 8vh 0;
-  /*! margin-bottom: 8vh; */
   padding: 0 3rem;
+  right: 0;
+  left: 0;
 }
 
 .content footer {
@@ -321,6 +322,25 @@ main .glide__bullets {
   height: 100%;
 }
 
+.blackBackground .content{
+  margin-bottom: 0;
+  padding-bottom: 2rem
+}
+
+.contact{
+  display: flex;
+  
+  
+}
+
+.contactInfo{
+  border-right: solid 1px #fff;
+  width: 50%;
+}
+
+.contact form{
+   padding: 0 2rem;
+}
 /* =============================IMAGES======================================= */
 
 .headerImage1{
@@ -511,6 +531,10 @@ main .glide__bullets {
 main .glide__bullet{
   width: 5vh;
   height: 5vh;
+}
+
+.center{
+
 }
 
 .show{
